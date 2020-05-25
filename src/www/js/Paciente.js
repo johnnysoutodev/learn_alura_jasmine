@@ -3,7 +3,7 @@ function Paciente(nome, idade, peso, altura){
     var clazz = {
 
         imprime : function(){
-            alert( nome + "tem" + idade + "anos.");
+            alert( nome + " tem " + idade + " anos.");
         },
 
         batimentos : function(){
@@ -15,6 +15,6 @@ function Paciente(nome, idade, peso, altura){
         }
 
     };
-    
+
     return clazz;
 }
