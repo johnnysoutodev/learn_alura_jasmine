@@ -20,4 +20,11 @@ describe("Consulta", function(){
 
         expect(consulta.preco()).toEqual(25 + 55 + 25 + 32);
     });
+
+    it("Não deve cobrar pela consulta de retorno", function(){
+        var johnny = new Paciente("Johnny", 38, 75, 1.76);
+        var consulta = new Consulta(johnny, ["proc1"], false, true);
+
+        expect(consulta.preco()).toEqual(0);
+    });
 });
