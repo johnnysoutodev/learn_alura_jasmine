@@ -1,6 +1,9 @@
 <html>
+    <head></head>
+    <body>
+        
     <script>
-        function MarioEMenor(){
+        function MaiorEMenor(){
 
             var menor;
             var maior;
@@ -15,7 +18,7 @@
                         if(num < menor) menor = num;
                         else if(num > maior) maior = num; 
                     });
-                }
+                },
 
                 pegaMenor : function() { return menor;},
                 pegaMaior : function() { return maior;}
@@ -31,4 +34,5 @@
         console.log(algoritmo.pegaMenor());
         
     </script>
+    </body>
 </html>
