@@ -6,10 +6,6 @@ function PacienteBuilder(){
     var altura = 1.80;
 
     var clazz = {
-        
-        constroi : function(){
-            return Paciente(nome, idade, peso, altura);
-        },
 
         comNome : function(valor){
             nome = valor;
@@ -29,6 +25,12 @@ function PacienteBuilder(){
         comAltura : function(valor){
             altura = valor;
             return this;
+        },
+
+        constroi : function(){
+            return new Paciente(nome, idade, peso, altura);
         }
-    }
+    };
+
+    return clazz;
 }
