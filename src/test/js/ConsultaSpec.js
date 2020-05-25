@@ -27,4 +27,11 @@ describe("Consulta", function(){
 
         expect(consulta.preco()).toEqual(0);
     });
+
+    it("Deve cobrar valor especifico por procedimento especifico.", function(){
+        var johnny = new Paciente("Johnny", 38, 75, 1.76);
+        var consulta = new Consulta(johnny, ["raio-x"], true, false);
+
+        expect(consulta.preco()).toEqual(110);
+    });
 });
