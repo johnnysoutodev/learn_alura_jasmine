@@ -4,7 +4,11 @@ describe("Consulta", function(){
     var joao;
     
     beforeEach(function(){
+        // guilherme = new PacienteBuilder().constroi();
+        // guilherme = new PacienteBuilder().comNome("Guilherme").comIdade(28).comPeso(78).comAltura(1.80);
         guilherme = new Paciente("Guilherme", 28, 72, 1.82);
+        console.log(guilherme);
+        
         johnny = new Paciente("Johnny", 38, 75, 1.76);
         joao = new Paciente("João", 1, 15, 0.86);
     });

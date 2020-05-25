@@ -13,7 +13,7 @@ describe("Paciente", function(){
     });
 
     it("Deve informar o nome e idade do paciente.", function(){
-        var johnny = new Paciente("Johnny", 38, 76, 1.76);
+        // var johnny = new Paciente("Johnny", 38, 76, 1.76);
 
         // expect(johnny.imprime()).toEqual("Johnny tem 38 anos.");
     });
