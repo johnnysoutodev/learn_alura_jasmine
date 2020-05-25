@@ -16,7 +16,7 @@
 
                     nums.forEach(function(num) {
                         if(num < menor) menor = num;
-                        else if(num > maior) maior = num; 
+                        if(num > maior) maior = num; 
                     });
                 },
 
@@ -28,7 +28,7 @@
         }
 
         var algoritmo = new MaiorEMenor();
-        algoritmo.encontra([5,15,7,9]);
+        algoritmo.encontra([7,6,5,4]);
 
         console.log(algoritmo.pegaMaior());
         console.log(algoritmo.pegaMenor());
